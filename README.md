@@ -8,12 +8,6 @@
 JS injection is running javascript from the client-side invoked by the client. You can do it in a browser or in console like in chrome
 
 
-### How to prevent script injections?
-* Do not allow any dynamic code execution in the application. This means you should avoid language constructs like eval and code strings passed to setTimeout() or the Function constructor.
-* Secondly, avoid serialization which could be vulnerable to injection attacks that execute code in the serialization process.
-* Lastly, perform dependency scanning to ensure that your application isn’t susceptible to this attack due to third-party open source components.
-* Furthermore, if you use a static code analysis tool like Snyk Code, you can find these potential code injection security vulnerabilities in your or your colleagues’ code.
-
 ### Example scenario
 
 Take a typical login form consisting of a user and email field and a password field. After the login info is submitted, it is combined with an SQL query on your web server.
@@ -48,6 +42,12 @@ The query returns a non-empty dataset for any potential login with the entire "u
 
 ##### [Example Video of SQL Injection](https://www.youtube.com/watch?v=wcaiKgQU6VE)
 
+
+### How to prevent script injections?
+* Do not allow any dynamic code execution in the application. This means you should avoid language constructs like eval and code strings passed to setTimeout() or the Function constructor.
+* Secondly, avoid serialization which could be vulnerable to injection attacks that execute code in the serialization process.
+* Lastly, perform dependency scanning to ensure that your application isn’t susceptible to this attack due to third-party open source components.
+* Furthermore, if you use a static code analysis tool like Snyk Code, you can find these potential code injection security vulnerabilities in your or your colleagues’ code.
 
 
 
